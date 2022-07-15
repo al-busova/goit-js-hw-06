@@ -20,11 +20,11 @@ function createGallery(images) {
 
     const itemOfGallery = document.createElement('li');
     itemOfGallery.classList.add('gallery__item');
-    const imageInItemOfGallery = `<img src= ${el.url} alt= ${el.alt} height = 250px >`;
+    const imageInItemOfGallery = `<img src= ${el.url} alt= ${el.alt} height = 250px>`;
     itemOfGallery.insertAdjacentHTML('afterbegin', imageInItemOfGallery);
     listImages.append(itemOfGallery);
-    // const imageEl = document.querySelector('img');
-    // imageEl.style.height = '250px'; Чому так працює тільки на перше зображення?
+    // const imageEl = document.querySelectorAll('img');
+    // imageEl.style.height = '250px'; Чому так не працює? (через це створюється лише одна лішка та висота не змінюється)
   }
   )
 }
